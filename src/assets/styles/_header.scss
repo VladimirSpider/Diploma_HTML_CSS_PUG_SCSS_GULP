@@ -1,0 +1,63 @@
+/*=====Header=====*/
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 55px;
+  width: 100%;
+  background-color: #fcf8f3;
+  overflow: hidden;
+}
+.menu,
+.text {
+  @include flex-row;
+}
+.menu {
+  margin: 0 100px 0 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  h2 {
+    margin-right: 40px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    font-family: "Gilroy700", sans-serif;
+  }
+  a {
+    color: #3a3a3a;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  img {
+    margin-left: 10px;
+    margin-right: 44px;
+  }
+}
+.search {
+  width: 470px;
+  background-color: #ffffff;
+  padding: 14px 15px;
+  margin-right: 70px;
+  img {
+    margin-right: 15px;
+  }
+  input {
+    border: 0px;
+  }
+  input::placeholder {
+    color: #616161;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    font-family: "Gilroy500", sans-serif;
+  }
+}
+.icons {
+  .icon__header {
+    margin-right: 35px;
+    padding-bottom: 10px;
+  }
+}
