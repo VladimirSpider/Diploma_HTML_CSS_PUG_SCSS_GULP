@@ -1,0 +1,244 @@
+/*=====Header=====*/
+.header {
+  padding-top: 40px;
+  width: 100%;
+  background-color: $bgColor;
+  position: relative;
+}
+.menu,
+.text {
+  @include flex-row;
+}
+.menu {
+  position: relative;
+  z-index: 2;
+  margin: 0 100px 0 100px;
+  padding-bottom: 55px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  h2 {
+    margin-right: 40px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    font-family: "Gilroy700", sans-serif;
+  }
+  a {
+    color: $colorForTextDark;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  img {
+    margin-left: 10px;
+    margin-right: 44px;
+  }
+}
+.search {
+  width: 470px;
+  background-color: $white;
+  padding: 14px 15px;
+  margin-right: 70px;
+  img {
+    margin-right: 15px;
+  }
+  input {
+    border: 0px;
+    width: 80%;
+  }
+  input::placeholder {
+    color: $colorForTextgrey;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    font-family: "Gilroy500", sans-serif;
+  }
+}
+.icons {
+  .icon__header {
+    margin-right: 35px;
+    padding-bottom: 10px;
+  }
+}
+
+.slider {
+  position: relative;
+  z-index: 2;
+  max-width: 2870px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.slider__header {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 90px 0 625px;
+}
+
+.slider__navigation {
+  @include flex-row;
+  align-items: center;
+  justify-content: center;
+  .navigation__point {
+    box-sizing: border-box;
+    margin-right: 20px;
+    div {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: $colorForNavigationPoint;
+    }
+  }
+  .active__slide {
+    padding: 7px;
+    border: 1px solid $orange;
+    border-radius: 50%;
+    div {
+      background-color: $orange;
+    }
+  }
+}
+
+.slider__button {
+  @include flex-row;
+  .button {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $lightOrange;
+    transition: all 0.5s ease;
+    div {
+      width: 14px;
+      height: 14px;
+      border-bottom: 1px solid $orange;
+      border-left: 1px solid $orange;
+      box-sizing: border-box;
+      transition: all 0.5s ease;
+    }
+  }
+  .prew {
+    div {
+      transform: rotate(45deg);
+    }
+  }
+  .next {
+    div {
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+.button.prew:hover,
+.button.next:hover {
+  background-color: $orange;
+}
+.button.prew:hover div,
+.button.next:hover div {
+  border-bottom: 1px solid $white;
+  border-left: 1px solid $white;
+}
+
+.slides {
+  @include flex-row;
+  margin-top: 20px;
+  .slide {
+    margin-right: 32px;
+    max-width: 934px;
+  }
+}
+
+.main__card {
+  padding: 60px;
+  background: $opacityColorWhite;
+  position: absolute;
+  z-index: 3;
+  top: 140px;
+  left: 100px;
+  h1 {
+    width: 370px;
+    margin-bottom: 16px;
+    color: $colorForTextDark;
+    font-size: 56px;
+    line-height: 67px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy700", sans-serif;
+  }
+  p {
+    width: 355px;
+    margin-bottom: 48px;
+    color: $colorForPinMainCard;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  div {
+    width: 375px;
+    background-color: $orange;
+    padding: 24px 135px;
+    cursor: pointer;
+    a {
+      color: $white;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+      font-family: "Gilroy600", sans-serif;
+    }
+  }
+}
+
+.substrate {
+  width: 67%;
+  height: 100%;
+  background: $colorForSubstrate;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+}
+
+.card__description {
+  width: 295px;
+  position: absolute;
+  z-index: 3;
+  top: 585px;
+  right: 140px;
+  padding: 24px;
+  background: $opacityColorWhite;
+  backdrop-filter: blur(15px);
+  h1 {
+    margin-bottom: 4px;
+    color: $colorForTextDark;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+  p {
+    margin-bottom: 8px;
+    color: $colorForTextgrey;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  .card__description__footer {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      color: $colorForTextDark;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy600", sans-serif;
+    }
+  }
+}
