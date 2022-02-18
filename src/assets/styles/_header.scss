@@ -4,12 +4,15 @@
   padding-top: 40px;
   width: 100%;
   background-color: #fcf8f3;
+  position: relative;
 }
 .menu,
 .text {
   @include flex-row;
 }
 .menu {
+  position: relative;
+  z-index: 2;
   margin: 0 100px 0 100px;
   padding-bottom: 55px;
   justify-content: space-between;
@@ -62,6 +65,8 @@
 }
 
 .slider {
+  position: relative;
+  z-index: 2;
   max-width: 2870px;
   overflow: hidden;
   padding-top: 10px;
@@ -146,5 +151,93 @@
   margin-top: 20px;
   .slide {
     margin-right: 32px;
+  }
+}
+
+.main__card {
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.72);
+  position: absolute;
+  z-index: 3;
+  top: 140px;
+  left: 100px;
+  h1 {
+    width: 370px;
+    margin-bottom: 16px;
+    color: #3a3a3a;
+    font-size: 56px;
+    line-height: 67px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy700", sans-serif;
+  }
+  p {
+    width: 355px;
+    margin-bottom: 48px;
+    color: #898989;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  div {
+    width: 375px;
+    background-color: #e89f71;
+    padding: 24px 135px;
+    cursor: pointer;
+    a {
+      color: #ffff;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+      font-family: "Gilroy600", sans-serif;
+    }
+  }
+}
+
+.substrate {
+  width: 964px;
+  height: 100%;
+  background: #f9f1e7;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+}
+
+.card__description {
+  width: 295px;
+  position: absolute;
+  z-index: 3;
+  top: 585px;
+  right: 140px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(15px);
+  h1 {
+    margin-bottom: 4px;
+    color: #3a3a3a;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+  p {
+    margin-bottom: 8px;
+    color: #616161;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  .card__description__footer {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      color: #3a3a3a;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy600", sans-serif;
+    }
   }
 }
