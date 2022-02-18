@@ -1,42 +1,4 @@
-/*=====FONTS=====*/
-@font-face {
-  font-family: "Gilroy700";
-  font-weight: 700;
-  font-style: normal;
-  src: url(../fonts/Gilroy/Gilroy-Extrabold.ttf);
-}
-@font-face {
-  font-family: "Gilroy800";
-  font-weight: 800;
-  font-style: normal;
-  src: url(../fonts/Gilroy/Gilroy-Black.ttf);
-}
-@font-face {
-  font-family: "Gilroy600";
-  font-weight: 600;
-  font-style: normal;
-  src: url(../fonts/Gilroy/Gilroy-Bold.ttf);
-}
-@font-face {
-  font-family: "Gilroy500";
-  font-weight: 500;
-  font-style: normal;
-  src: url(../fonts/Gilroy/Gilroy-Semibold.ttf);
-}
-@font-face {
-  font-family: "Gilroy400";
-  font-weight: 400;
-  font-style: normal;
-  src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
-}
 @import "global";
-/*=====Mixins=====*/
-@mixin flex-row {
-  display: flex;
-  flex-direction: row;
-}
-/*=====Wrapper=====*/
-.wrapper {
-  max-width: 1440px;
-}
+@import "fonts";
+@import "mixins";
 @import "header";
