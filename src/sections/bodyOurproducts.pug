@@ -1,0 +1,9 @@
+include ../components/data
+include ../components/mixins
+section.our__products 
+	h1 Our Products 
+	div.block__cards__products
+		each item in allProducts
+			+cardProduct(item.title, item.description, item.cost, item.img, item.circle)
+	div.our__products_button
+		a Show More

@@ -1,0 +1,35 @@
+.block__icons {
+  padding: 100px 100px 104px 124px;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.block__icon {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  .block__icon__img {
+    margin-right: 26px;
+  }
+  .block__icon__text {
+    h2 {
+      display: block;
+      margin-bottom: 2px;
+      color: $colorForTextDark;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy600", sans-serif;
+    }
+    p {
+      display: block;
+      color: $colorForPinMainCard;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy500", sans-serif;
+    }
+  }
+}

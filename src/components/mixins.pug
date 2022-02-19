@@ -1,0 +1,34 @@
+mixin blockIcon(h2text, ptext, path)
+	div.block__icon
+		div.block__icon__img
+			img(src= path, alt="image")
+		div.block__icon__text
+			h2= h2text
+			p= ptext
+
+mixin circle(path= '')
+	div.circle__for__product
+		img(src= path, alt="")
+
+mixin cardProduct(title, discription, cost, path, circle)
+	div.card__product
+		img(src= path, alt="image")
+		div.card__product_discription
+			h2= title
+			p= discription
+			h2= cost
+		div.pop__up
+			div.pop__up_elements
+				a Add to cart 
+				div.pop__up_elements_icons_text 
+					div.pop__up_elements_icons_text
+						div.pop__up_element_icon
+							img(src="./assets/images/body/ourProducts/share.png", alt="")
+						div.pop__up_element_text
+							p Share
+					div.pop__up_elements_icons_text
+						div.pop__up_element_icon
+							img(src="./assets/images/body/ourProducts/like.png", alt="")
+						div.pop__up_element_text
+							p Like
+		+circle(circle)

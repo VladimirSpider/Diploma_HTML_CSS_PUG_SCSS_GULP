@@ -8,7 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const Fs = require('fs');
 
-//const dataFromFile = JSON.parse(Fs.readFileSync('./data.json'));
+// const dataFromFile = JSON.parse(Fs.readFileSync('./data.json'));
 
 function browsersync() {
     browserSync.init({
@@ -22,7 +22,7 @@ function html() {
     return src('src/index.pug')
         .pipe(pug({
             pretty: true,
-            //locals: dataFromFile || {},
+            // locals: dataFromFile || {},
         }))
         .pipe(dest('build'))
         .pipe(browserSync.stream())
