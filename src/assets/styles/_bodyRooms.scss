@@ -1,1 +1,127 @@
+.beautiful__rooms {
+  padding: 44px 0 44px 100px;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bgColor;
+}
 
+.discription__rooms {
+  padding-bottom: 20px;
+  width: 380px;
+  @include flex-column;
+  h2 {
+    margin-bottom: 8px;
+    color: $colorForTextDark;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy700", sans-serif;
+  }
+  p {
+    margin-bottom: 36px;
+    color: $colorForTextgrey;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  .discription__rooms_button {
+    a {
+      padding: 12px 40px;
+      background-color: $orange;
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy600", sans-serif;
+    }
+  }
+}
+
+.slider__rooms {
+  width: 870px;
+  position: relative;
+}
+.slides__rooms {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.slider__rooms__navigation {
+  @include flex-row;
+  align-items: center;
+  padding: 0 0 0 24px;
+  background-color: $bgColor;
+  width: 465px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.slider__rooms__discription {
+  @include flex-row;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  .slider__rooms__discription__text {
+    padding: 32px 32px 40px 32px;
+    background-color: $opacityColorWhite;
+    p {
+      margin-bottom: 8px;
+      color: $colorForTextgrey;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy500", sans-serif;
+    }
+    h2 {
+      color: $colorForTextDark;
+      font-size: 28px;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy600", sans-serif;
+    }
+  }
+  img {
+    background-color: $orange;
+    padding: 16px;
+  }
+}
+
+.slider__rooms__button {
+  position: absolute;
+  bottom: 275px;
+  right: 60px;
+}
+
+.white__button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $white;
+  padding: 17px;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+  .white__button__arrow {
+    width: 14px;
+    height: 14px;
+    border-bottom: 1px solid $orange;
+    border-left: 1px solid $orange;
+  }
+}
+
+.white__button__left {
+  transform: rotate(45deg);
+}
+
+.white__button__right {
+  transform: rotate(-135deg);
+}
+
+.white__button:hover {
+  background-color: $lightOrange;
+}
