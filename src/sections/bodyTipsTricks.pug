@@ -1,0 +1,29 @@
+include ../components/mixins
+section.tips__tricks 
+	h1 Tips & Tricks 
+	div.slider__tips__tricks
+		div.slides__tips__tricks
+			div.slide__tips__tricks
+				div.slide__tips__tricks__text__img
+					img(src="./assets/images/body/sliderTipsTricks/img1.svg", alt="")
+					div.slide__tips__tricks__text
+						h2 How to create a living room to love
+						p 20 jan 2020
+			div.slide__tips__tricks.selected__slide
+				div.slide__tips__tricks__text__img
+					img(src="./assets/images/body/sliderTipsTricks/img2.svg", alt="")
+					div.slide__tips__tricks__text
+						h2 Solution for clean look working space
+						p 10 jan 2020
+			div.slide__tips__tricks
+				div.slide__tips__tricks__text__img
+					img(src="./assets/images/body/sliderTipsTricks/img3.svg", alt="")
+					div.slide__tips__tricks__text
+						h2 Make your cooking activity more fun with good setup
+						p 20 jan 2020
+		div.slider__tips__tricks__navigation
+			+sliderNavigationSecond()(class='active__slide')
+		div.slider__tips__tricks__button__left
+			+whiteButton()(class='white__button__left')
+		div.slider__tips__tricks__button__right
+			+whiteButton()(class='white__button__right')

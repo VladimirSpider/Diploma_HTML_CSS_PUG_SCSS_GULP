@@ -1,0 +1,31 @@
+include ../components/mixins
+section.beautiful__rooms
+	div.discription__rooms
+		h2 50+ Beautiful rooms inspiration
+		p Our designer already made 
+			|a lot of beautiful prototipe 
+			|of rooms that inspire you
+		div.discription__rooms_button
+			a Explore More
+	div.slider__rooms
+		div.slides__rooms
+			div.slide__rooms
+				img(src="./assets/images/body/sliderRooms/img1.svg", alt="images")
+			div.slide__rooms
+				img(src="./assets/images/body/sliderRooms/img2.svg", alt="images")
+			div.slide__rooms
+				img(src="./assets/images/body/sliderRooms/img3.svg", alt="images")
+		div.slider__rooms__navigation
+			+sliderNavigation()(class='active__slide')
+		div.slider__rooms__discription
+			div.slider__rooms__discription__text
+				p 01 --- Bed Room
+				h2 Inner Peace
+			img(src="./assets/images/body/sliderRooms/arrow.png", alt="")
+		div.slider__rooms__button
+			+whiteButton()(class='white__button__right')
+
+
+		
+		
+		

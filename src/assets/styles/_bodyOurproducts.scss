@@ -1,0 +1,126 @@
+.our__products {
+  h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: $colorForTextDark;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy700", sans-serif;
+  }
+}
+
+.block__cards__products {
+  padding: 0 102px 0 102px;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .card__product {
+    position: relative;
+    margin-bottom: 32px;
+  }
+}
+
+.card__product_discription {
+  padding: 14px 30px 20px 15px;
+  background-color: $colorForCardOurProducts;
+  :nth-child(1) {
+    padding-bottom: 8px;
+    color: $colorForTextDark;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+  p {
+    padding-bottom: 8px;
+    color: $colorForPinMainCard;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  :nth-child(3) {
+    padding-bottom: 8px;
+    color: $colorForTextDark;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+}
+
+.pop__up {
+  @include flex-row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $colorForPopUp;
+  visibility: hidden;
+}
+
+.card__product:hover > div {
+  visibility: visible;
+}
+
+.pop__up_elements {
+  a {
+    padding: 12px 58px;
+    background-color: $white;
+    color: $orange;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+}
+
+.pop__up_elements_icons_text {
+  margin-top: 20px;
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  .pop__up_elements_icons_text {
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+    .pop__up_element_icon {
+      img {
+        margin-right: 11px;
+      }
+    }
+    .pop__up_element_text {
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      font-family: "Gilroy600", sans-serif;
+    }
+  }
+}
+
+.circle__for__product {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.our__products_button {
+  @include flex-row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+  a {
+    padding: 12px 82px;
+    color: $orange;
+    border: 1px solid $orange;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+}

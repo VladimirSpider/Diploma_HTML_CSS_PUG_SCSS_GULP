@@ -1,0 +1,7 @@
+include ../components/data
+include ../components/mixins
+section.block__icons
+	each item in allBlocks
+		+blockIcon(item.title, item.description, item.img)
+	
+
