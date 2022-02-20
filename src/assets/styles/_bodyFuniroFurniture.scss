@@ -1,0 +1,52 @@
+.funiroFurniture {
+  position: relative;
+  padding-top: 30px;
+  text-align: center;
+  p {
+    margin-bottom: 8px;
+    color: $colorForTextgrey;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy600", sans-serif;
+  }
+}
+.funiroFurniture__title {
+  position: absolute;
+  width: 100%;
+  h2 {
+    margin-bottom: 8px;
+    color: $colorForTextDark;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1px;
+    font-family: "Gilroy700", sans-serif;
+  }
+}
+
+.funiroFurniture__images {
+  padding-top: 20px;
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.funiroFurniture__images__blt,
+.funiroFurniture__images__brt {
+  margin-bottom: 16px;
+  @include flex-row;
+  align-items: flex-end;
+  :nth-child(1) {
+    margin-right: 16px;
+  }
+}
+
+.funiroFurniture__images__blb,
+.funiroFurniture__images__brb {
+  margin-bottom: 16px;
+  @include flex-row;
+  align-items: flex-start;
+  :nth-child(1) {
+    margin-right: 16px;
+  }
+}
