@@ -44,6 +44,17 @@ mixin sliderNavigation()
 		div.navigation__point 
 			div
 
+mixin sliderNavigationSecond() 
+	div.slider__navigation
+		div.navigation__point
+			div
+		div.navigation__point(class!=attributes.class) 
+			div
+		div.navigation__point 
+			div
+		div.navigation__point 
+			div
+
 mixin whiteButton()
 	div.white__button
 		div.white__button__arrow(class!=attributes.class)
