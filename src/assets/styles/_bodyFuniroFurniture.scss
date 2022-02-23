@@ -10,7 +10,22 @@
     letter-spacing: 0.1px;
     font-family: "Gilroy600", sans-serif;
   }
+  img {
+    @media screen and (max-width: 710px) {
+      margin: 10px;
+    }
+  }
 }
+
+.mod_big {
+  @media screen and (max-width: 480px) {
+    transform: scale(0.9);
+    @media screen and (max-width: 410px) {
+      transform: scale(0.7);
+    }
+  }
+}
+
 .funiroFurniture__title {
   position: absolute;
   width: 100%;
@@ -29,6 +44,10 @@
   @include flex-row;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1410px) {
+    @include flex-column;
+    padding-top: 50px;
+  }
 }
 
 .funiroFurniture__images__blt,
@@ -39,6 +58,11 @@
   :nth-child(1) {
     margin-right: 16px;
   }
+  @media screen and (max-width: 710px) {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .funiroFurniture__images__blb,
@@ -48,5 +72,10 @@
   align-items: flex-start;
   :nth-child(1) {
     margin-right: 16px;
+  }
+  @media screen and (max-width: 710px) {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
   }
 }
