@@ -8,7 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const Fs = require('fs');
 
-// const dataFromFile = JSON.parse(Fs.readFileSync('./data.json'));
+const dataFromFile = JSON.parse(Fs.readFileSync('./data.json'));
 
 function browsersync() {
     browserSync.init({
@@ -22,10 +22,16 @@ function html() {
     return src('src/index.pug')
         .pipe(pug({
             pretty: true,
-            // locals: dataFromFile || {},
+            locals: dataFromFile || {},
         }))
         .pipe(dest('build'))
         .pipe(browserSync.stream())
+}
+
+function javascript() {
+    return src('src/script.js')
+    .pipe(dest('build'))
+    .pipe(browserSync.stream())
 }
 
 function css() {
@@ -63,10 +69,11 @@ function startWatch() {
     watch('src/assets/styles/**/*.scss', css)
     watch('src/assets/images/**/*', images)
     watch('src/assets/fonts/**/*', fonts)
+    watch('src/script.js', javascript)
 }
 
-exports.dev = parallel(browsersync, startWatch, html, images, fonts, css)
-exports.build = series(clear, parallel(html, images, fonts, css))
+exports.dev = parallel(browsersync, startWatch, html, images, fonts, css, javascript)
+exports.build = series(clear, parallel(html, images, fonts, css, javascript))
 
 
-exports.default = parallel(browsersync, startWatch, html, images, fonts, css)
+exports.default = parallel(browsersync, startWatch, html, images, fonts, css, javascript)

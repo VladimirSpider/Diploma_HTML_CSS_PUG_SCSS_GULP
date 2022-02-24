@@ -1,0 +1,76 @@
+.footer {
+  padding: 75px 101px 0 101px;
+}
+.footer__information {
+  padding-top: 80px;
+  @include flex-row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #d8d8d8;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
+  ul {
+    margin-right: 5px;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+      margin: 0 20px;
+    }
+    li {
+      h2 {
+        margin-bottom: 16px;
+        color: $black;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.1px;
+        font-family: "Gilroy700", sans-serif;
+      }
+      p {
+        max-width: 252px;
+        margin-bottom: 16px;
+        color: $colorForTextgrey;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        font-family: "Gilroy400", sans-serif;
+        a {
+          max-width: 252px;
+          margin-bottom: 16px;
+          color: $colorForTextgrey;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          font-family: "Gilroy400", sans-serif;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+      form {
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        input {
+          border: 0px;
+          background-color: $colorForCardOurProducts;
+          padding: 14px 70px 14px 11px;
+          margin-right: 5px;
+        }
+        input::placeholder {
+          margin-bottom: 16px;
+          color: $colorForTextgrey;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          font-family: "Gilroy400", sans-serif;
+        }
+        button {
+          background-color: $orange;
+          border: 0px;
+          padding: 11px;
+        }
+      }
+    }
+  }
+}

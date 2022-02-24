@@ -19,6 +19,13 @@
   .card__product {
     position: relative;
     margin-bottom: 32px;
+    @media screen and (max-width: 1350px) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    justify-content: center;
   }
 }
 

@@ -4,11 +4,18 @@
   justify-content: space-between;
   align-items: center;
   background-color: $bgColor;
+  @media screen and (max-width: 1350px) {
+    @include flex-column;
+    padding: 44px 0 44px 0;
+  }
 }
 
 .discription__rooms {
   padding-bottom: 20px;
   width: 380px;
+  @media screen and (max-width: 420px) {
+    width: 300px;
+  }
   @include flex-column;
   h2 {
     margin-bottom: 8px;
@@ -42,6 +49,13 @@
 .slider__rooms {
   width: 870px;
   position: relative;
+  @media screen and (max-width: 890px) {
+    width: 400px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 420px) {
+      transform: scale(0.8);
+    }
+  }
 }
 .slides__rooms {
   @include flex-row;
@@ -60,6 +74,12 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
+  @media screen and (max-width: 890px) {
+    width: auto;
+    height: auto;
+    bottom: -5%;
+    right: auto;
+  }
 }
 
 .slider__rooms__discription {
@@ -97,6 +117,9 @@
   position: absolute;
   bottom: 275px;
   right: 60px;
+  @media screen and (max-width: 890px) {
+    right: 5%;
+  }
 }
 
 .white__button {

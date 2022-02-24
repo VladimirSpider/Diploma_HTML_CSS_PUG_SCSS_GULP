@@ -16,8 +16,20 @@
   padding-bottom: 55px;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1355px) {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
 }
 .text {
+  @media screen and (max-width: 1355px) {
+    margin-bottom: 10px;
+    @media screen and (max-width: 500px) {
+      @include flex-column;
+    }
+  }
   h2 {
     margin-right: 40px;
     font-size: 24px;
@@ -38,6 +50,13 @@
   }
 }
 .search {
+  @media screen and (max-width: 1355px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+    @media screen and (max-width: 500px) {
+      width: 320px;
+    }
+  }
   width: 470px;
   background-color: $white;
   padding: 14px 15px;
@@ -67,9 +86,17 @@
 .slider {
   position: relative;
   z-index: 2;
-  max-width: 2870px;
   overflow: hidden;
   padding-top: 10px;
+  @media screen and (max-width: 1355px) {
+    width: 934px;
+    @media screen and (max-width: 940px) {
+      width: 500px;
+      @media screen and (max-width: 500px) {
+        width: 320px;
+      }
+    }
+  }
 }
 
 .slider__header {
@@ -77,6 +104,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 90px 0 625px;
+  @media screen and (max-width: 940px) {
+    margin: 0 0 0 20px;
+    @media screen and (max-width: 500px) {
+      justify-content: space-evenly;
+    }
+  }
 }
 
 .slider__navigation {
@@ -147,6 +180,10 @@
 }
 
 .slides {
+  @media screen and (max-width: 1355px) {
+    position: relative;
+    right: 406px;
+  }
   @include flex-row;
   margin-top: 20px;
   .slide {
@@ -155,7 +192,44 @@
   }
 }
 
+.slides {
+  .slide {
+    .slide__block {
+      img {
+        @media screen and (max-width: 940px) {
+          max-width: 500px;
+          @media screen and (max-width: 500px) {
+            max-width: 340px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .main__card {
+  @media screen and (max-width: 1355px) {
+    top: 200px;
+    left: 5%;
+    padding: 20px;
+    @media screen and (max-width: 940px) {
+      padding: 10px;
+      left: auto;
+      right: 5%;
+      @media screen and (max-width: 770px) {
+        padding: 10px;
+        left: 35%;
+        right: auto;
+        top: auto;
+        bottom: 2%;
+        @media screen and (max-width: 500px) {
+          padding: 5px;
+          left: 1%;
+          bottom: 2%;
+        }
+      }
+    }
+  }
   padding: 60px;
   background: $opacityColorWhite;
   position: absolute;
@@ -170,6 +244,19 @@
     line-height: 67px;
     letter-spacing: 0.1px;
     font-family: "Gilroy700", sans-serif;
+    @media screen and (max-width: 1355px) {
+      font-size: 46px;
+      @media screen and (max-width: 940px) {
+        width: 200px;
+        font-size: 30px;
+        line-height: 30px;
+        @media screen and (max-width: 770px) {
+          width: 150px;
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
   }
   p {
     width: 355px;
@@ -179,18 +266,42 @@
     line-height: 30px;
     letter-spacing: 0.1px;
     font-family: "Gilroy500", sans-serif;
+    @media screen and (max-width: 940px) {
+      width: 200px;
+      font-size: 20px;
+      line-height: 25px;
+      @media screen and (max-width: 770px) {
+        width: 150px;
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 15px;
+      }
+    }
   }
   div {
     width: 375px;
     background-color: $orange;
     padding: 24px 135px;
     cursor: pointer;
+    @media screen and (max-width: 940px) {
+      padding: 20px;
+      text-align: center;
+      width: 200px;
+      @media screen and (max-width: 770px) {
+        width: 150px;
+        padding: 10px;
+      }
+    }
     a {
       color: $white;
       font-size: 20px;
       line-height: 30px;
       letter-spacing: 0.5px;
       font-family: "Gilroy600", sans-serif;
+      @media screen and (max-width: 770px) {
+        font-size: 15px;
+        line-height: 15px;
+      }
     }
   }
 }
@@ -205,6 +316,21 @@
 }
 
 .card__description {
+  @media screen and (max-width: 1355px) {
+    top: auto;
+    right: auto;
+    bottom: 2%;
+    left: 5%;
+    @media screen and (max-width: 770px) {
+      width: 150px;
+      padding: 10px;
+      left: 1%;
+      @media screen and (max-width: 500px) {
+        padding: 5px;
+        bottom: 27%;
+      }
+    }
+  }
   width: 295px;
   position: absolute;
   z-index: 3;
@@ -220,6 +346,10 @@
     line-height: 35px;
     letter-spacing: 0.1px;
     font-family: "Gilroy600", sans-serif;
+    @media screen and (max-width: 770px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
   p {
     margin-bottom: 8px;
@@ -228,17 +358,30 @@
     line-height: 24px;
     letter-spacing: 0.1px;
     font-family: "Gilroy500", sans-serif;
+    @media screen and (max-width: 770px) {
+      font-size: 15px;
+      line-height: 15px;
+    }
   }
   .card__description__footer {
     @include flex-row;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 770px) {
+      @include flex-column;
+      align-items: flex-start;
+    }
     h2 {
       color: $colorForTextDark;
       font-size: 20px;
       line-height: 30px;
       letter-spacing: 0.1px;
       font-family: "Gilroy600", sans-serif;
+      @media screen and (max-width: 770px) {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 5px;
+      }
     }
   }
 }

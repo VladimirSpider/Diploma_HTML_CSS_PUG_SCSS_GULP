@@ -1,0 +1,78 @@
+{
+	"allCards": [
+		{
+			"title": "first tile", 
+			"description": "text", 
+			"link": "#", 
+			"img": "url"
+		},
+		{
+			"title": "first tile", 
+			"description": "text", 
+			"link": "#", 
+			"img": "url"
+		},
+		{
+			"title": "first tile", 
+			"description": "text", 
+			"link": "#", 
+			"img": "url"
+		},
+		{
+			"title": "first tile", 
+			"description": "text", 
+			"link": "#", 
+			"img": "url"
+		}
+
+	],
+	"portfolio": [
+		{
+			"title": "first tile1", 
+			"description": "text1", 
+			"link": "#1", 
+			"img": "url1"
+		},
+		{
+			"title": "first tile1", 
+			"description": "text1", 
+			"link": "#1", 
+			"img": "url1"
+		},
+		{
+			"title": "first tile1", 
+			"description": "text1", 
+			"link": "#1", 
+			"img": "url1"
+		},
+		{
+			"title": "first tile1", 
+			"description": "text1", 
+			"link": "#1", 
+			"img": "url1"
+		}
+
+	],
+	"heroSection": {
+		"title": "Hero Section",
+		"subtitle": "qwerty",
+		"allCards": [
+			{
+				"title": "first tile Beautiful", 
+				"description": "text", 
+				"link": "#", 
+				"img": "url",
+				"power": 100
+			},
+			{
+				"title": "second tile Beautiful", 
+				"description": "text", 
+				"link": "#", 
+				"img": "url",
+				"power": 200
+			}
+	
+		]
+	},
+	"tel": "124-51-51"
+}
