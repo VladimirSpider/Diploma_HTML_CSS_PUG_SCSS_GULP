@@ -7,3 +7,14 @@ section.our__products
 			+cardProduct(item.title, item.description, item.cost, item.img, item.circle)
 	div.our__products_button
 		a Show More
+
+section.our__products.our__products_drid 
+	h1 Our Products 
+	div.block__cards__products_grid
+		- let i = 0
+		each item in allProducts
+			- i+=1
+			div.grid_element(class= `grid_element_${i}`)
+				+cardProduct(item.title, item.description, item.cost, item.img, item.circle)
+	div.our__products_button
+		a Show More
