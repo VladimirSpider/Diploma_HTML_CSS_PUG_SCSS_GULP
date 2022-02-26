@@ -283,6 +283,7 @@
     background-color: $orange;
     padding: 24px 135px;
     cursor: pointer;
+    transition: all 0.5s ease;
     @media screen and (max-width: 940px) {
       padding: 20px;
       text-align: center;
@@ -298,10 +299,17 @@
       line-height: 30px;
       letter-spacing: 0.5px;
       font-family: "Gilroy600", sans-serif;
+      transition: all 0.5s ease;
       @media screen and (max-width: 770px) {
         font-size: 15px;
         line-height: 15px;
       }
+    }
+  }
+  div:hover {
+    background-color: $lightOrange;
+    a {
+      color: $orange;
     }
   }
 }

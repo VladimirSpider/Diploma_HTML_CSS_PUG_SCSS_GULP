@@ -58,3 +58,16 @@ mixin sliderNavigationSecond()
 mixin whiteButton()
 	div.white__button
 		div.white__button__arrow(class!=attributes.class)
+
+mixin footerUl(title, text1, arr)
+	ul
+		li
+			h2= title
+			p= text1
+		- let count = 0;
+		while count < arr.length
+			li 
+				p= arr[count]
+			- count += 1;
+		
+		

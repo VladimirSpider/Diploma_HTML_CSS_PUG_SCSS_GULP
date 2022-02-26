@@ -1,28 +1,31 @@
 {
-	"allCards": [
+	"footerData": [
 		{
-			"title": "first tile", 
-			"description": "text", 
-			"link": "#", 
-			"img": "url"
+			"title": "Menu", 
+			"text1": "Products", 
+			"text": [
+				"Rooms",
+				"Inspirations",
+				"About Us",
+				"Terms & Policy"
+			]
 		},
 		{
-			"title": "first tile", 
-			"description": "text", 
-			"link": "#", 
-			"img": "url"
+			"title": "Account", 
+			"text1": "My Account",
+			"text": [
+				"Checkout",
+				"My Cart",
+				"My catalog"
+			] 
 		},
 		{
-			"title": "first tile", 
-			"description": "text", 
-			"link": "#", 
-			"img": "url"
-		},
-		{
-			"title": "first tile", 
-			"description": "text", 
-			"link": "#", 
-			"img": "url"
+			"title": "Stay Connected", 
+			"text1": "Facebook",
+			"text": [
+				"Instagram",
+				"Twitter"
+			] 
 		}
 
 	],

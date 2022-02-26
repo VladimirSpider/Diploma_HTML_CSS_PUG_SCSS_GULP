@@ -69,6 +69,11 @@
           background-color: $orange;
           border: 0px;
           padding: 11px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        button:hover {
+          background-color: black;
         }
       }
     }

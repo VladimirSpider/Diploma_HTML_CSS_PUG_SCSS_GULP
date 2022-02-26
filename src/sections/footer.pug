@@ -1,3 +1,4 @@
+include ../components/mixins
 section.footer 
 	div.footer__information
 		ul 
@@ -17,37 +18,9 @@ section.footer
 			li 
 				p
 					a(href="#") www.funiro.com
-		ul 
-			li
-				h2 Menu
-				p Products
-			li 
-				p Rooms 
-			li 
-				p Inspirations
-			li 
-				p About Us
-			li 
-				p Terms & Policy
-		ul 
-			li
-				h2 Account
-				p My Account
-			li 
-				p Checkout 
-			li 
-				p My Cart
-			li 
-				p My catalog
-		ul 
-			li
-				h2 Stay Connected 
-				p Facebook
-			li 
-				p Instagram 
-			li 
-				p Twitter
-		ul 
+		each text in footerData 
+			+footerUl(text.title, text.text1, text.text) 
+		ul
 			li
 				h2 Stay Updated 
 				form(action="#")
