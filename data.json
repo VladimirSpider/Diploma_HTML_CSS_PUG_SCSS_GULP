@@ -1,6 +1,15 @@
 {
 	"footerData": [
 		{
+			"title": "Funiro", 
+			"text1": "Worldwide furniture store since 2020. We sell over 1000+ branded products on our website", 
+			"text": [
+				["./assets/images/footer/map.png", "Sawojajar Malang, Indonesia"],
+				["./assets/images/footer/phone.png", "+6289 456 3455"],
+				["www.funiro.com"]
+			]
+		},
+		{
 			"title": "Menu", 
 			"text1": "Products", 
 			"text": [

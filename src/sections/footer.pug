@@ -1,23 +1,6 @@
 include ../components/mixins
 section.footer 
 	div.footer__information
-		ul 
-			li
-				h2 Funiro 
-				p Worldwide furniture store since 
-					|2020. We sell over 1000+ branded 
-					|products on our website
-			li 
-				p 
-					img(src="./assets/images/footer/map.png", alt="")
-					|Sawojajar Malang, Indonesia
-			li 
-				p 	
-					img(src="./assets/images/footer/phone.png", alt="")
-					|+6289 456 3455
-			li 
-				p
-					a(href="#") www.funiro.com
 		each text in footerData 
 			+footerUl(text.title, text.text1, text.text) 
 		ul

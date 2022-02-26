@@ -66,8 +66,19 @@ mixin footerUl(title, text1, arr)
 			p= text1
 		- let count = 0;
 		while count < arr.length
-			li 
-				p= arr[count]
+			if Array.isArray(arr[count])
+				if arr[count].length > 1
+					li
+						p
+							img(src= arr[count][0], alt="")
+							= arr[count][1] 
+				else
+					li 
+						p
+							a(href="#")= arr[count][0]
+			if !Array.isArray(arr[count])
+				li 
+					p= arr[count]
 			- count += 1;
 		
 		
