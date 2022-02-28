@@ -2,6 +2,23 @@ include ../components/mixins
 section.header
 	div.substrate
 	nav.menu
+		div.burger_menu 
+			div.close_burger
+				h2 Funiro.
+				div.close_burger_menu
+					div.burger_line
+					div.burger_line
+					div.burger_line
+
+			div.open_burger_menu
+				h2 Funiro.
+				a(href="#") Products
+					img(src="./assets/images/header/menu/arrow.svg", alt="icon - arrow")
+				a(href="#") Rooms
+					img(src="./assets/images/header/menu/arrow.svg", alt="icon - arrow")
+				a(href="#") Inspirations
+				div.button_close_burger_menu
+					a(href="#" id="close_bm") X
 		div.text
 			h2 Funiro.
 			a(href="#") Products

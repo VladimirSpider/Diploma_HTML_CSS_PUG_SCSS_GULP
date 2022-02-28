@@ -28,6 +28,7 @@
     margin-bottom: 10px;
     @media screen and (max-width: 500px) {
       @include flex-column;
+      display: none; //for burger menu
     }
   }
   h2 {
@@ -391,5 +392,77 @@
         margin-bottom: 5px;
       }
     }
+  }
+}
+
+// BURGER MENU
+
+.burger_menu {
+  display: none;
+  margin-bottom: 20px;
+  @media screen and (max-width: 500px) {
+    text-align: center;
+    display: block; //for burger menu
+  }
+  .close_burger_hidden {
+    visibility: hidden;
+  }
+  .close_burger {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2px;
+      font-family: "Gilroy700", sans-serif;
+    }
+    .close_burger_menu {
+      cursor: pointer;
+      .burger_line {
+        width: 100px;
+        height: 10px;
+        background-color: $white;
+        border: 2px solid $black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.open_burger_menu {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background-color: $opacityColorWhite;
+  @include flex-column;
+  transition: all 0.5s ease;
+  h2 {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    font-family: "Gilroy700", sans-serif;
+  }
+  a {
+    color: $colorForTextDark;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-family: "Gilroy500", sans-serif;
+  }
+  img {
+    margin-left: 10px;
+  }
+}
+.open_burger_menu_show {
+  top: 0;
+}
+
+.button_close_burger_menu {
+  position: absolute;
+  padding: 5px;
+  a {
+    font-size: 20px;
+    font-family: "Gilroy700", sans-serif;
   }
 }
